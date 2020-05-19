@@ -1,0 +1,760 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>data_analysis &mdash; levitopy  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="macro_cavity" href="levitopy.data_analysis.macro_cavity.html" />
+    <link rel="prev" title="levitopy" href="levitopy.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> levitopy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="levitopy.html">levitopy</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="levitopy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">data_analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="levitopy.data_analysis.macro_cavity.html">macro_cavity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-levitopy.data_analysis.bayes_estimator">bayes_estimator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-levitopy.data_analysis.calibration">calibration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-levitopy.data_analysis.exp_parameters">exp_parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-levitopy.data_analysis.signal_processing">signal_processing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="levitopy.exp_control.html">exp_control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="levitopy.simulation.html">simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="levitopy.theory.html">theory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="levitopy.html#module-levitopy.utils">utils</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">levitopy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="levitopy.html">levitopy</a> &raquo;</li>
+        
+      <li>data_analysis</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/levitopy.data_analysis.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-analysis">
+<h1>data_analysis<a class="headerlink" href="#data-analysis" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="levitopy.data_analysis.macro_cavity.html">macro_cavity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="levitopy.data_analysis.macro_cavity.html#module-levitopy.data_analysis.macro_cavity.cavity_characterisation">cavity_characterisation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="module-levitopy.data_analysis.bayes_estimator">
+<span id="bayes-estimator"></span><h2>bayes_estimator<a class="headerlink" href="#module-levitopy.data_analysis.bayes_estimator" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator">
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.data_analysis.bayes_estimator.</code><code class="sig-name descname">BayesEstimator</code><span class="sig-paren">(</span><em class="sig-param">E0=None</em>, <em class="sig-param">sample_rate=None</em>, <em class="sig-param">method='s'</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator.alpha">
+<em class="property">property </em><code class="sig-name descname">alpha</code><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator.alpha" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator.beta">
+<em class="property">property </em><code class="sig-name descname">beta</code><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator.beta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator.estimate">
+<em class="property">property </em><code class="sig-name descname">estimate</code><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator.estimate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator.gamma">
+<em class="property">property </em><code class="sig-name descname">gamma</code><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator.gamma" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator.gradbeta">
+<code class="sig-name descname">gradbeta</code><span class="sig-paren">(</span><em class="sig-param">xi=None</em>, <em class="sig-param">beta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator.gradbeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>gradient of log prob w.r.t. beta</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator.hessian">
+<code class="sig-name descname">hessian</code><span class="sig-paren">(</span><em class="sig-param">xi=None</em>, <em class="sig-param">beta=None</em>, <em class="sig-param">s=None</em>, <em class="sig-param">n=None</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator.hessian" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator.logprob">
+<code class="sig-name descname">logprob</code><span class="sig-paren">(</span><em class="sig-param">xi=None</em>, <em class="sig-param">beta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator.logprob" title="Permalink to this definition">¶</a></dt>
+<dd><p>unnormalized log prob</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">En</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.bayes_estimator.BayesEstimator.xi">
+<em class="property">property </em><code class="sig-name descname">xi</code><a class="headerlink" href="#levitopy.data_analysis.bayes_estimator.BayesEstimator.xi" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-levitopy.data_analysis.calibration">
+<span id="calibration"></span><h2>calibration<a class="headerlink" href="#module-levitopy.data_analysis.calibration" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="levitopy.data_analysis.calibration.A_fun">
+<code class="sig-prename descclassname">levitopy.data_analysis.calibration.</code><code class="sig-name descname">A_fun</code><span class="sig-paren">(</span><em class="sig-param">qx</em>, <em class="sig-param">w</em>, <em class="sig-param">dt</em>, <em class="sig-param">n_max=None</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.calibration.A_fun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ak = A_fun(qx, w, fs)
+input:</p>
+<blockquote>
+<div><p>qx: input signal vector length N
+w: omega, w = 2*pi*k*fs / M  vector length K
+dt: sampling interval
+n_max:(optional) batch size when calculating the integral (sum), necessary for large arrays qx due to memory problem</p>
+<blockquote>
+<div><p>use something like 1e4</p>
+</div></blockquote>
+</div></blockquote>
+<dl class="simple">
+<dt>output:</dt><dd><p>Ak: spectrum at frequencies w to get to the single sided power spectral density calculate PSD = 2*abs(A)**2*dt*len(qx)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.calibration.fit_psd">
+<code class="sig-prename descclassname">levitopy.data_analysis.calibration.</code><code class="sig-name descname">fit_psd</code><span class="sig-paren">(</span><em class="sig-param">fx</em>, <em class="sig-param">px</em>, <em class="sig-param">initial_guess=None</em>, <em class="sig-param">fixed_parameters=[]</em>, <em class="sig-param">frequency_range=[]</em>, <em class="sig-param">verbose=False</em>, <em class="sig-param">method='leastsq'</em>, <em class="sig-param">return_fig=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.calibration.fit_psd" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fx</strong> – </p></li>
+<li><p><strong>px</strong> – </p></li>
+<li><p><strong>initial_guess</strong> – </p></li>
+<li><p><strong>fixed_parameters</strong> – </p></li>
+<li><p><strong>frequency_range</strong> – </p></li>
+<li><p><strong>verbose</strong> – </p></li>
+<li><p><strong>method</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.calibration.get_calibration_and_mass">
+<code class="sig-prename descclassname">levitopy.data_analysis.calibration.</code><code class="sig-name descname">get_calibration_and_mass</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">fs</em>, <em class="sig-param">frequency_range=None</em>, <em class="sig-param">T=300</em>, <em class="sig-param">pressure=None</em>, <em class="sig-param">coherent_drive=False</em>, <em class="sig-param">n_max=1000000.0</em>, <em class="sig-param">nq=1</em>, <em class="sig-param">Eo=None</em>, <em class="sig-param">return_fig=False</em>, <em class="sig-param">verbose=True</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.calibration.get_calibration_and_mass" title="Permalink to this definition">¶</a></dt>
+<dd><p>run calibration and return the parameters in a dictionary</p>
+<p>the expected time trace is a thermal peak of the frequency range and a coherent drive which corresponds
+to the highest point in the spectra if</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – time trace</p></li>
+<li><p><strong>fs</strong> – sampling frequency</p></li>
+<li><p><strong>frequency_range</strong> – frequency range for fit of thermal peak</p></li>
+<li><p><strong>T</strong> – ambient temperature in Kelvins (default 300K)</p></li>
+<li><p><strong>pressure</strong> – pressure at which measurement was taken in mBar</p></li>
+<li><p><strong>coherent_drive</strong> – if true signal contains a coherent drive tone</p></li>
+<li><p><strong>n_max</strong> – max length of timetrace to use for determination of coherent peak height (becomes very memory intensive for long measurements)</p></li>
+<li><p><strong>nq</strong> – number of charges on particle</p></li>
+<li><p><strong>Eo</strong> – electric field amplitude in V/m</p></li>
+<li><p><strong>save_fig_path</strong> – if verbose on path to which to save the image</p></li>
+<li><p><strong>verbose</strong> – if True print information and plots as script runs</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.calibration.get_max_psd_coherent_drive">
+<code class="sig-prename descclassname">levitopy.data_analysis.calibration.</code><code class="sig-name descname">get_max_psd_coherent_drive</code><span class="sig-paren">(</span><em class="sig-param">qx</em>, <em class="sig-param">fs</em>, <em class="sig-param">n_r=1</em>, <em class="sig-param">n_pts=10</em>, <em class="sig-param">n_it=2</em>, <em class="sig-param">verbose=False</em>, <em class="sig-param">return_fig=True</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.calibration.get_max_psd_coherent_drive" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the maximum of the power spectral density of a coherent drive, note that since this is a delta function the
+total power in the peak is po*df with df = fs/len(qx)
+:param qx: timetrace with signature of coherent drive
+:param fs: sampling rate (Hz)
+:param n_r: range of fourier pts for optimization
+:param n_pts: number of points used in numerical optimization, the more the better the resolution but also the longer the calculation
+:param n_it: number iterations used in numerical optimization, the more the better the resolution but also the longer the calculation
+:param verbose: if verbose plot a graph that shows the psd in each iteration
+:return: fo and po, the frequency of the coherent drive and the power spectral density at this frequency</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.calibration.get_physical_params_from_psd_model">
+<code class="sig-prename descclassname">levitopy.data_analysis.calibration.</code><code class="sig-name descname">get_physical_params_from_psd_model</code><span class="sig-paren">(</span><em class="sig-param">model_fit</em>, <em class="sig-param">gas_pressure</em>, <em class="sig-param">temperature=300</em>, <em class="sig-param">rho_m=2200</em>, <em class="sig-param">Mgas=0.02897</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.calibration.get_physical_params_from_psd_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>retrieve the physical parameters from the fitted models to power spectral density</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model_fit</strong> – </p></li>
+<li><p><strong>gas_pressure</strong> – gas pressure in mBar</p></li>
+<li><p><strong>temperature</strong> – temperature of environment in Kelvins,  default is 300K</p></li>
+<li><p><strong>rho_m</strong> – mass density in units of kg/m^3, default is 2200kg/m^3</p></li>
+<li><p><strong>Mgas</strong> – molar mass of molecules, default is 28.97e-3 kg/mol for dry air</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.calibration.remove_peak">
+<code class="sig-prename descclassname">levitopy.data_analysis.calibration.</code><code class="sig-name descname">remove_peak</code><span class="sig-paren">(</span><em class="sig-param">p</em>, <em class="sig-param">n_peak=2</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.calibration.remove_peak" title="Permalink to this definition">¶</a></dt>
+<dd><p>assumes that there is one prominent peak in p and removes it by replacing the 2*n_peak+1 values around the peak
+with the mean of p of the adjacent 2*n_peak values</p>
+<p>WARNING: this function actually changes the value of the input p!
+:param p: array with single strong peak
+:param n_peak: size over which to remove peak
+:param verbose: if true plot the data
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-levitopy.data_analysis.exp_parameters">
+<span id="exp-parameters"></span><h2>exp_parameters<a class="headerlink" href="#module-levitopy.data_analysis.exp_parameters" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity">
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.data_analysis.exp_parameters.</code><code class="sig-name descname">Cavity</code><span class="sig-paren">(</span><em class="sig-param">name='new cavity'</em>, <em class="sig-param">wavelength=1.064e-06</em>, <em class="sig-param">kappa=62831.853071795864</em>, <em class="sig-param">fsr=33929200658.769764</em>, <em class="sig-param">coupl_eff=0.6</em>, <em class="sig-param">p_out=0</em>, <em class="sig-param">mirror_curv=0.025</em>, <em class="sig-param">filename=None</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>usage</p>
+<p># create cavity class with default parameters
+cavity = Cavity()</p>
+<p># create cavity class and load trap from file
+cavity = Cavity(filename)</p>
+<p># create cavity class with user defined parameters
+cavity = Cavity(lambda=1064e-9, kappa=2*np.pi*10e3 , fsr=2*np.pi*5.4e9 , coupl_eff=0.6, power_out=0 )</p>
+<p>use save and load functions to read from and write to disk</p>
+<dl class="simple">
+<dt># accepted input values and their default values</dt><dd><p>name=’new cavity’
+wavelength=1064e-9
+kappa=2 * np.pi * 10e3
+fsr=2 * np.pi * 5.4e9
+coupl_eff=0.6
+p_out=0
+mirror_curv=25e-3
+filename=None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.absorption">
+<em class="property">property </em><code class="sig-name descname">absorption</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.absorption" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.coupl_eff">
+<em class="property">property </em><code class="sig-name descname">coupl_eff</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.coupl_eff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.finesse">
+<em class="property">property </em><code class="sig-name descname">finesse</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.finesse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.fsr">
+<em class="property">property </em><code class="sig-name descname">fsr</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.fsr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.intensity">
+<em class="property">property </em><code class="sig-name descname">intensity</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.intensity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.kappa">
+<em class="property">property </em><code class="sig-name descname">kappa</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.kappa" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.length">
+<em class="property">property </em><code class="sig-name descname">length</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.length" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.lifetime">
+<em class="property">property </em><code class="sig-name descname">lifetime</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.lifetime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.mirror_curv">
+<em class="property">property </em><code class="sig-name descname">mirror_curv</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.mirror_curv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.mode_vol">
+<em class="property">property </em><code class="sig-name descname">mode_vol</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.mode_vol" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.n_pht_intra">
+<em class="property">property </em><code class="sig-name descname">n_pht_intra</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.n_pht_intra" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.omega">
+<em class="property">property </em><code class="sig-name descname">omega</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.omega" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.p_circ">
+<em class="property">property </em><code class="sig-name descname">p_circ</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.p_circ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.p_out">
+<em class="property">property </em><code class="sig-name descname">p_out</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.p_out" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.photon_energy">
+<em class="property">property </em><code class="sig-name descname">photon_energy</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.photon_energy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.rayleigh_rg">
+<em class="property">property </em><code class="sig-name descname">rayleigh_rg</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.rayleigh_rg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.reflectivity">
+<em class="property">property </em><code class="sig-name descname">reflectivity</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.reflectivity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.roundtriptime">
+<em class="property">property </em><code class="sig-name descname">roundtriptime</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.roundtriptime" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.transmission">
+<em class="property">property </em><code class="sig-name descname">transmission</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.transmission" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.waist">
+<em class="property">property </em><code class="sig-name descname">waist</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.waist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.wavelength">
+<em class="property">property </em><code class="sig-name descname">wavelength</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.wavelength" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Cavity.wavevec">
+<em class="property">property </em><code class="sig-name descname">wavevec</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Cavity.wavevec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="levitopy.data_analysis.exp_parameters.Particle">
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.data_analysis.exp_parameters.</code><code class="sig-name descname">Particle</code><span class="sig-paren">(</span><em class="sig-param">name='new particle'</em>, <em class="sig-param">radius=7e-08</em>, <em class="sig-param">frequency=120000.0</em>, <em class="sig-param">refractive_index=1.45</em>, <em class="sig-param">density=2220</em>, <em class="sig-param">temperature=300</em>, <em class="sig-param">charge=0</em>, <em class="sig-param">filename=None</em>, <em class="sig-param">show_uncertainties=False</em>, <em class="sig-param">fit=None</em>, <em class="sig-param">pressure=None</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>usage</p>
+<p># create particle class with default parameters
+particle = Particle()</p>
+<p># create particle class and load particle from file
+particle = Particle(filename)</p>
+<p># create particle class with user defined parameters
+particle = Particle(radius=80, frequency = 100e3)</p>
+<p>use save and load functions to read from and write to disk</p>
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.alpha">
+<em class="property">property </em><code class="sig-name descname">alpha</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.alpha" title="Permalink to this definition">¶</a></dt>
+<dd><p>polarizability in Farad m^2</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Returns</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.density">
+<em class="property">property </em><code class="sig-name descname">density</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.density" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.diameter">
+<em class="property">property </em><code class="sig-name descname">diameter</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.diameter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.frequency">
+<em class="property">property </em><code class="sig-name descname">frequency</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.frequency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.mass">
+<em class="property">property </em><code class="sig-name descname">mass</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.mass" title="Permalink to this definition">¶</a></dt>
+<dd><p>volume in m^3</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Returns</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.omega">
+<em class="property">property </em><code class="sig-name descname">omega</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.omega" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.radius">
+<em class="property">property </em><code class="sig-name descname">radius</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.radius" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.refractive_index">
+<em class="property">property </em><code class="sig-name descname">refractive_index</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.refractive_index" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.volume">
+<em class="property">property </em><code class="sig-name descname">volume</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.volume" title="Permalink to this definition">¶</a></dt>
+<dd><p>volume in m^3</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Returns</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.vth">
+<em class="property">property </em><code class="sig-name descname">vth</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.vth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.xth">
+<em class="property">property </em><code class="sig-name descname">xth</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.xth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Particle.zpf">
+<em class="property">property </em><code class="sig-name descname">zpf</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Particle.zpf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="levitopy.data_analysis.exp_parameters.Trap">
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.data_analysis.exp_parameters.</code><code class="sig-name descname">Trap</code><span class="sig-paren">(</span><em class="sig-param">name='new trap'</em>, <em class="sig-param">wavelength=1.064e-06</em>, <em class="sig-param">power=0.1</em>, <em class="sig-param">NA_exp=0.8</em>, <em class="sig-param">NA_corr=0.6</em>, <em class="sig-param">filename=None</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>usage</p>
+<p># create trap class with default parameters
+trap = Trap()</p>
+<p># create trap class and load trap from file
+trap = Trap(filename)</p>
+<p># create trap class with user defined parameters
+trap = Trap(lambda=1064e-9, NA=0.8, power=100e-3)</p>
+<p># display all parameters
+trap.all_params
+use save and load functions to read from and write to disk</p>
+<dl class="simple">
+<dt># accepted input parameters and their default values:</dt><dd><p>name=’new trap’
+wavelength=1064e-9
+power=100e-3
+NA_exp=0.8
+NA_corr=0.6
+filename=None</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.NA">
+<em class="property">property </em><code class="sig-name descname">NA</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.NA" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.NA_corr">
+<em class="property">property </em><code class="sig-name descname">NA_corr</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.NA_corr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.NA_exp">
+<em class="property">property </em><code class="sig-name descname">NA_exp</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.NA_exp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.int0">
+<em class="property">property </em><code class="sig-name descname">int0</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.int0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.load">
+<code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.load" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.omega">
+<em class="property">property </em><code class="sig-name descname">omega</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.omega" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.power">
+<em class="property">property </em><code class="sig-name descname">power</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.power" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.rayleigh_rg">
+<em class="property">property </em><code class="sig-name descname">rayleigh_rg</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.rayleigh_rg" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.save">
+<code class="sig-name descname">save</code><span class="sig-paren">(</span><em class="sig-param">filename</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.save" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.waist">
+<em class="property">property </em><code class="sig-name descname">waist</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.waist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.wavelength">
+<em class="property">property </em><code class="sig-name descname">wavelength</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.wavelength" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="levitopy.data_analysis.exp_parameters.Trap.wavevec">
+<em class="property">property </em><code class="sig-name descname">wavevec</code><a class="headerlink" href="#levitopy.data_analysis.exp_parameters.Trap.wavevec" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-levitopy.data_analysis.signal_processing">
+<span id="signal-processing"></span><h2>signal_processing<a class="headerlink" href="#module-levitopy.data_analysis.signal_processing" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="levitopy.data_analysis.signal_processing.power_spectral_density">
+<code class="sig-prename descclassname">levitopy.data_analysis.signal_processing.</code><code class="sig-name descname">power_spectral_density</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">time_step</em>, <em class="sig-param">freq_range=None</em>, <em class="sig-param">n_pieces=None</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.signal_processing.power_spectral_density" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the <em>single sided</em> power spectral density of the time trace x which is sampled at intervals time_step</p>
+<p>gives the same result as scipy.signal.welch where N_piece = len(x) / nperseg and window = ‘boxcar’</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>array</em>) – timetrace</p></li>
+<li><p><strong>time_step</strong> (<em>float</em>) – sampling interval of x</p></li>
+<li><p><strong>freq_range</strong> (<em>array</em><em> or </em><em>tuple</em>) – frequency range in the form [f_min, f_max] to return only the spectrum within this range</p></li>
+<li><p><strong>n_pieces</strong> – if not None should be integer and the timetrace will be chopped into N_pieces parts, the PSD calculated for each and the avrg PSD is returned</p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="levitopy.data_analysis.macro_cavity.html" class="btn btn-neutral float-right" title="macro_cavity" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="levitopy.html" class="btn btn-neutral float-left" title="levitopy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, pno-trappers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

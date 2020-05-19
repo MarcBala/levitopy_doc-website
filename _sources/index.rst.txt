@@ -1,0 +1,63 @@
+.. levitopy documentation master file, created by
+   sphinx-quickstart on Mon May 11 16:56:08 2020.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to levitopy's documentation!
+====================================
+.. image:: _static/LevitoPy.png
+
+LevitoPy is a toolbox for data analysis of Levitodynamics related experiments, including.
+
+- Calibration (in progress)
+- Simulation (in progress)
+- Theory (in progress)
+
+To use the levitopy code from anywhere (either in python or a notebook) install it via pip.
+
+For the latest version available on GitLab
+
+```pip install git+https://gitlab.icfo.net/pno-trappers/levitopy```
+
+To access the example notebooks, install `levitopy` as describe above and [download](https://gitlab.icfo.net/pno-trappers/levitopy/-/tree/master/images) the notebooks.
+Alternatively you can clone the entire project.
+
+Overview
+________
+The project is structured as follows (for more information see also [wiki - best practices](https://gitlab.icfo.net/pno-trappers/levitopy/-/wikis/best_practices))
+
+| ├── data
+| ├── images
+| ├── notebooks
+| │   ├── basics
+| │   └── simulations
+| ├── levitopy
+| │   ├── data_analysis
+| │   ├── exp_control
+| │   ├── simulation
+| │   ├── theory
+| │   └── utils.py
+| └── scripts
+|     └── simulation
+|
+
+
+Python module documentation
+________
+.. toctree::
+   levitopy.rst
+
+
+
+
+
+
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex` <Index of functions>
+* :ref:`modindex`
+* :ref:`search`

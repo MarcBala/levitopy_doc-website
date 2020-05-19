@@ -1,0 +1,13 @@
+theory
+=======================
+
+
+brownian\_particle
+-----------------------------------------
+
+.. automodule:: levitopy.theory.brownian_particle
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
