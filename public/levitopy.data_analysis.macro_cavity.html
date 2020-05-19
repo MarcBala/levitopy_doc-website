@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>macro_cavity &mdash; levitopy  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="exp_control" href="levitopy.exp_control.html" />
+    <link rel="prev" title="data_analysis" href="levitopy.data_analysis.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> levitopy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="levitopy.html">levitopy</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="levitopy.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="levitopy.data_analysis.html">data_analysis</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">macro_cavity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levitopy.data_analysis.html#module-levitopy.data_analysis.bayes_estimator">bayes_estimator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levitopy.data_analysis.html#module-levitopy.data_analysis.calibration">calibration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levitopy.data_analysis.html#module-levitopy.data_analysis.exp_parameters">exp_parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levitopy.data_analysis.html#module-levitopy.data_analysis.signal_processing">signal_processing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="levitopy.exp_control.html">exp_control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="levitopy.simulation.html">simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="levitopy.theory.html">theory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="levitopy.html#module-levitopy.utils">utils</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">levitopy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="levitopy.html">levitopy</a> &raquo;</li>
+        
+          <li><a href="levitopy.data_analysis.html">data_analysis</a> &raquo;</li>
+        
+      <li>macro_cavity</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/levitopy.data_analysis.macro_cavity.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="macro-cavity">
+<h1>macro_cavity<a class="headerlink" href="#macro-cavity" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-levitopy.data_analysis.macro_cavity.cavity_characterisation">
+<span id="cavity-characterisation"></span><h2>cavity_characterisation<a class="headerlink" href="#module-levitopy.data_analysis.macro_cavity.cavity_characterisation" title="Permalink to this headline">¶</a></h2>
+<p>MODULE:
+Contains functions used to characterize the cavity response for the macro-cavity experiment.</p>
+<p>Main funtion: cavity_characterisation does the whole characterisation, see documentation or example notebook</p>
+<p>relevant auxiliary functions:</p>
+<p>cav_trans:   cavity transmission function</p>
+<p>fit_cavity_transmission: fits data to cavity transmission</p>
+<dl class="function">
+<dt id="levitopy.data_analysis.macro_cavity.cavity_characterisation.cav_trans">
+<code class="sig-prename descclassname">levitopy.data_analysis.macro_cavity.cavity_characterisation.</code><code class="sig-name descname">cav_trans</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">max_power</em>, <em class="sig-param">linewidth</em>, <em class="sig-param">res_frequency</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.macro_cavity.cavity_characterisation.cav_trans" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cavity response function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>float</em>) – </p></li>
+<li><p><strong>p1</strong> (<em>np.array</em><em>)</em><em>, </em><em>np.array</em><em>(</em><em>[</em><em>a1</em><em>,</em><em>a2</em><em>,</em><em>a3</em><em>]</em>) – max_power (float), maximum (transmission at resonance)
+linewidth (float), FWHM
+res_frequency (float), resonance frequency</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>(float), transmission</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.macro_cavity.cavity_characterisation.cavity_characterisation">
+<code class="sig-prename descclassname">levitopy.data_analysis.macro_cavity.cavity_characterisation.</code><code class="sig-name descname">cavity_characterisation</code><span class="sig-paren">(</span><em class="sig-param">date</em>, <em class="sig-param">filename_bg</em>, <em class="sig-param">filename_signal</em>, <em class="sig-param">channel_refl=1</em>, <em class="sig-param">channel_scan=4</em>, <em class="sig-param">channel_tran=2</em>, <em class="sig-param">directory='default'</em>, <em class="sig-param">gain_tran=50</em>, <em class="sig-param">input_power=5e-05</em>, <em class="sig-param">time_step=8e-08</em>, <em class="sig-param">save_figures=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.macro_cavity.cavity_characterisation.cavity_characterisation" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Does the whole enchilada:</dt><dd><p>1 Imports the data and converts appropriate axes
+2 Fits the transmission to the cavity response function
+3 plots the fit (saves it if ‘save_figures’=True’
+4 Calculates the coupling efficiency from the reflected light</p>
+</dd>
+</dl>
+<p>Inputs:</p>
+<blockquote>
+<div><blockquote>
+<div><p>channel_refl             int
+channel_scan             int
+channel_tran             int
+date                     str
+directory                str    where is the data *
+filename_bg              str
+filename_signal          str
+gain_tran                int    in db
+input_power               float  in Watt
+time_step                float  in s
+save figures             bool</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>if the directory is set to its default the directory is ‘//nas01/PNO/MEMBERS/Nadine/</p></li>
+</ul>
+<p>Labdata/RawData_Oscilloscopes/’+date+’/’</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>a dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.macro_cavity.cavity_characterisation.conversion_power">
+<code class="sig-prename descclassname">levitopy.data_analysis.macro_cavity.cavity_characterisation.</code><code class="sig-name descname">conversion_power</code><span class="sig-paren">(</span><em class="sig-param">gain</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.macro_cavity.cavity_characterisation.conversion_power" title="Permalink to this definition">¶</a></dt>
+<dd><p>Conversion for PDA 36 A EC photodiode on high impedance</p>
+<p>Parameters:
+Gain (int)  in dB</p>
+<p>Returns:
+Conversion factor (float) in W/V</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.macro_cavity.cavity_characterisation.data_import">
+<code class="sig-prename descclassname">levitopy.data_analysis.macro_cavity.cavity_characterisation.</code><code class="sig-name descname">data_import</code><span class="sig-paren">(</span><em class="sig-param">directory</em>, <em class="sig-param">filename_signal</em>, <em class="sig-param">filename_bg</em>, <em class="sig-param">time_step</em>, <em class="sig-param">channel_tran</em>, <em class="sig-param">channel_refl</em>, <em class="sig-param">channel_scan</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.macro_cavity.cavity_characterisation.data_import" title="Permalink to this definition">¶</a></dt>
+<dd><p>Imports the csv files from the oscillosope, substracts the background and configures the   time axis.
+Uses pylab.genfromtxt</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>directory</strong> (<em>str</em>) – </p></li>
+<li><p><strong>filename_signal</strong> (<em>str</em><em>)</em><em>, </em><em>name of the signal file</em><em> (</em><em>without '.csv'</em>) – </p></li>
+<li><p><strong>filename_bg</strong> (<em>str</em><em>)</em><em>, </em><em>name of the background file</em><em> (</em><em>without '.csv'</em>) – </p></li>
+<li><p><strong>time_step</strong> (<em>float</em><em>)</em><em>, </em><em>time in seconds between consecutive data points</em><em> (</em><em>in s</em>) – It is written on the     txt.csv file</p></li>
+<li><p><strong>channel_tran</strong> (<em>int</em>) – </p></li>
+<li><p><strong>channel_refl</strong> (<em>int</em>) – </p></li>
+<li><p><strong>channel_scan</strong> (<em>int</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>time (numpy.array,float), time axis in seconds
+data_tran (numpy.array,float), Transmitted time trace in Volts
+data_refl (numpy.array,float), Reflected time trace in Volts
+data_scan (numpy.array,float), Scan time trace in Volts</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.macro_cavity.cavity_characterisation.fit_cavity_transmission">
+<code class="sig-prename descclassname">levitopy.data_analysis.macro_cavity.cavity_characterisation.</code><code class="sig-name descname">fit_cavity_transmission</code><span class="sig-paren">(</span><em class="sig-param">x</em>, <em class="sig-param">y</em>, <em class="sig-param">cav_trans_model</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.macro_cavity.cavity_characterisation.fit_cavity_transmission" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fits the data specified by x and y to the cavity transmission function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>np.array</em>) – </p></li>
+<li><p><strong>y</strong> (<em>np.array</em>) – </p></li>
+<li><p><strong>an instance of the class Model from lmfit</strong> (<em>cav_trans_model</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+<dl>
+<dt>Returns</dt><dd><p>results: an instance of the Model.result class</p>
+<p><a class="reference external" href="https://lmfit.github.io/lmfit-py/model.html#the-modelresult-class">https://lmfit.github.io/lmfit-py/model.html#the-modelresult-class</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.macro_cavity.cavity_characterisation.plot_residuals">
+<code class="sig-prename descclassname">levitopy.data_analysis.macro_cavity.cavity_characterisation.</code><code class="sig-name descname">plot_residuals</code><span class="sig-paren">(</span><em class="sig-param">frequency</em>, <em class="sig-param">result</em>, <em class="sig-param">str_up_down</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.macro_cavity.cavity_characterisation.plot_residuals" title="Permalink to this definition">¶</a></dt>
+<dd><p>plots the residuals from the fit</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.macro_cavity.cavity_characterisation.plot_trans_refl">
+<code class="sig-prename descclassname">levitopy.data_analysis.macro_cavity.cavity_characterisation.</code><code class="sig-name descname">plot_trans_refl</code><span class="sig-paren">(</span><em class="sig-param">time</em>, <em class="sig-param">frequency</em>, <em class="sig-param">power</em>, <em class="sig-param">power_cool</em>, <em class="sig-param">result</em>, <em class="sig-param">data_refl</em>, <em class="sig-param">mode_data_refl</em>, <em class="sig-param">coupling_efficiency</em>, <em class="sig-param">str_up_down</em>, <em class="sig-param">date</em>, <em class="sig-param">filename_signal</em>, <em class="sig-param">save_figs</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.macro_cavity.cavity_characterisation.plot_trans_refl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots the results nicely for one sweep direction</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="levitopy.data_analysis.macro_cavity.cavity_characterisation.time_trace_chop">
+<code class="sig-prename descclassname">levitopy.data_analysis.macro_cavity.cavity_characterisation.</code><code class="sig-name descname">time_trace_chop</code><span class="sig-paren">(</span><em class="sig-param">time</em>, <em class="sig-param">data_scan</em>, <em class="sig-param">data_tran</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.data_analysis.macro_cavity.cavity_characterisation.time_trace_chop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="levitopy.exp_control.html" class="btn btn-neutral float-right" title="exp_control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="levitopy.data_analysis.html" class="btn btn-neutral float-left" title="data_analysis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, pno-trappers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
