@@ -1,7 +1,10 @@
-macro\_cavity
+levitopy.data\_analysis.macro\_cavity package
 =============================================
 
-cavity\_characterisation
+Submodules
+----------
+
+levitopy.data\_analysis.macro\_cavity.cavity\_characterisation module
 ---------------------------------------------------------------------
 
 .. automodule:: levitopy.data_analysis.macro_cavity.cavity_characterisation
@@ -9,4 +12,27 @@ cavity\_characterisation
    :undoc-members:
    :show-inheritance:
 
+levitopy.data\_analysis.macro\_cavity.strong\_coupling module
+-------------------------------------------------------------
 
+.. automodule:: levitopy.data_analysis.macro_cavity.strong_coupling
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+levitopy.data\_analysis.macro\_cavity.timetrace\_postprocess module
+-------------------------------------------------------------------
+
+.. automodule:: levitopy.data_analysis.macro_cavity.timetrace_postprocess
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: levitopy.data_analysis.macro_cavity
+   :members:
+   :undoc-members:
+   :show-inheritance:

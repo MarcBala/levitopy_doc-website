@@ -1,15 +1,21 @@
-levitopy
+levitopy package
 ================
 
+Subpackages
+-----------
+
 .. toctree::
+   :maxdepth: 4
 
    levitopy.data_analysis
    levitopy.exp_control
    levitopy.simulation
    levitopy.theory
 
+Submodules
+----------
 
-utils
+levitopy.utils module
 ---------------------
 
 .. automodule:: levitopy.utils
@@ -18,4 +24,10 @@ utils
    :show-inheritance:
 
 
+Module contents
+---------------
 
+.. automodule:: levitopy
+   :members:
+   :undoc-members:
+   :show-inheritance:

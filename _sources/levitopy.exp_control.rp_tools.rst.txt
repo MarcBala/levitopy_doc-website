@@ -1,8 +1,10 @@
-rp\_tools
+levitopy.exp\_control.rp\_tools package
 =======================================
 
+Submodules
+----------
 
-pll\_follow\_frequency
+levitopy.exp\_control.rp\_tools.pll\_follow\_frequency module
 -------------------------------------------------------------
 
 .. automodule:: levitopy.exp_control.rp_tools.pll_follow_frequency
@@ -10,7 +12,7 @@ pll\_follow\_frequency
    :undoc-members:
    :show-inheritance:
 
-red\_pitaya
+levitopy.exp\_control.rp\_tools.red\_pitaya module
 --------------------------------------------------
 
 .. automodule:: levitopy.exp_control.rp_tools.red_pitaya
@@ -18,3 +20,11 @@ red\_pitaya
    :undoc-members:
    :show-inheritance:
 
+
+Module contents
+---------------
+
+.. automodule:: levitopy.exp_control.rp_tools
+   :members:
+   :undoc-members:
+   :show-inheritance:

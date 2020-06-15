@@ -1,12 +1,18 @@
-data\_analysis
+levitopy.data\_analysis package
 ===============================
 
+Subpackages
+-----------
+
 .. toctree::
+   :maxdepth: 4
 
    levitopy.data_analysis.macro_cavity
 
+Submodules
+----------
 
-bayes\_estimator
+levitopy.data\_analysis.bayes\_estimator module
 -----------------------------------------------
 
 .. automodule:: levitopy.data_analysis.bayes_estimator
@@ -14,7 +20,7 @@ bayes\_estimator
    :undoc-members:
    :show-inheritance:
 
-calibration
+levitopy.data\_analysis.calibration module
 ------------------------------------------
 
 .. automodule:: levitopy.data_analysis.calibration
@@ -22,7 +28,15 @@ calibration
    :undoc-members:
    :show-inheritance:
 
-exp\_parameters
+levitopy.data\_analysis.data\_import module
+-------------------------------------------
+
+.. automodule:: levitopy.data_analysis.data_import
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+levitopy.data\_analysis.exp\_parameters module
 ----------------------------------------------
 
 .. automodule:: levitopy.data_analysis.exp_parameters
@@ -30,7 +44,7 @@ exp\_parameters
    :undoc-members:
    :show-inheritance:
 
-signal\_processing
+levitopy.data\_analysis.signal\_processing module
 -------------------------------------------------
 
 .. automodule:: levitopy.data_analysis.signal_processing
@@ -39,4 +53,10 @@ signal\_processing
    :show-inheritance:
 
 
+Module contents
+---------------
 
+.. automodule:: levitopy.data_analysis
+   :members:
+   :undoc-members:
+   :show-inheritance:

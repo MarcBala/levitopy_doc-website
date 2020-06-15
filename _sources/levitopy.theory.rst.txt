@@ -1,8 +1,18 @@
-theory
+levitopy.theory package
 =======================
 
+Subpackages
+-----------
 
-brownian\_particle
+.. toctree::
+   :maxdepth: 4
+
+   levitopy.theory.macro_cavity
+
+Submodules
+----------
+
+levitopy.theory.brownian\_particle module
 -----------------------------------------
 
 .. automodule:: levitopy.theory.brownian_particle
@@ -10,4 +20,19 @@ brownian\_particle
    :undoc-members:
    :show-inheritance:
 
+levitopy.theory.mechanical\_oscillator module
+---------------------------------------------
 
+.. automodule:: levitopy.theory.mechanical_oscillator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: levitopy.theory
+   :members:
+   :undoc-members:
+   :show-inheritance:

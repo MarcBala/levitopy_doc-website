@@ -1,11 +1,18 @@
-exp\_control
+levitopy.exp\_control package
 =============================
+
+Subpackages
+-----------
+
 .. toctree::
+   :maxdepth: 4
 
    levitopy.exp_control.rp_tools
 
+Submodules
+----------
 
-exp\_control.setup
+levitopy.exp\_control.setup module
 ----------------------------------
 
 .. automodule:: levitopy.exp_control.setup
@@ -14,3 +21,10 @@ exp\_control.setup
    :show-inheritance:
 
 
+Module contents
+---------------
+
+.. automodule:: levitopy.exp_control
+   :members:
+   :undoc-members:
+   :show-inheritance:

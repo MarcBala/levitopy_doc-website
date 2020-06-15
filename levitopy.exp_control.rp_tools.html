@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>rp_tools &mdash; levitopy  documentation</title>
+  <title>levitopy.exp_control.rp_tools package &mdash; levitopy  documentation</title>
   
 
   
@@ -36,8 +36,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="simulation" href="levitopy.simulation.html" />
-    <link rel="prev" title="exp_control" href="levitopy.exp_control.html" /> 
+    <link rel="next" title="levitopy.simulation package" href="levitopy.simulation.html" />
+    <link rel="prev" title="levitopy.exp_control package" href="levitopy.exp_control.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,19 +82,23 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="levitopy.html">levitopy</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="levitopy.html">levitopy package</a><ul class="current">
 <li class="toctree-l2 current"><a class="reference internal" href="levitopy.html#subpackages">Subpackages</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="levitopy.data_analysis.html">data_analysis</a></li>
-<li class="toctree-l3 current"><a class="reference internal" href="levitopy.exp_control.html">exp_control</a><ul class="current">
-<li class="toctree-l4 current"><a class="current reference internal" href="#">rp_tools</a></li>
-<li class="toctree-l4"><a class="reference internal" href="levitopy.exp_control.html#exp-control-setup">exp_control.setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="levitopy.data_analysis.html">levitopy.data_analysis package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="levitopy.exp_control.html">levitopy.exp_control package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="levitopy.exp_control.html#subpackages">Subpackages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levitopy.exp_control.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levitopy.exp_control.html#levitopy-exp-control-setup-module">levitopy.exp_control.setup module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="levitopy.exp_control.html#module-levitopy.exp_control">Module contents</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="levitopy.simulation.html">simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="levitopy.theory.html">theory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="levitopy.simulation.html">levitopy.simulation package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="levitopy.theory.html">levitopy.theory package</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="levitopy.html#module-levitopy.utils">utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="levitopy.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="levitopy.html#levitopy-utils-module">levitopy.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="levitopy.html#module-levitopy">Module contents</a></li>
 </ul>
 </li>
 </ul>
@@ -142,11 +146,11 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-          <li><a href="levitopy.html">levitopy</a> &raquo;</li>
+          <li><a href="levitopy.html">levitopy package</a> &raquo;</li>
         
-          <li><a href="levitopy.exp_control.html">exp_control</a> &raquo;</li>
+          <li><a href="levitopy.exp_control.html">levitopy.exp_control package</a> &raquo;</li>
         
-      <li>rp_tools</li>
+      <li>levitopy.exp_control.rp_tools package</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -165,52 +169,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="rp-tools">
-<h1>rp_tools<a class="headerlink" href="#rp-tools" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-levitopy.exp_control.rp_tools.pll_follow_frequency">
-<span id="pll-follow-frequency"></span><h2>pll_follow_frequency<a class="headerlink" href="#module-levitopy.exp_control.rp_tools.pll_follow_frequency" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="levitopy.exp_control.rp_tools.pll_follow_frequency.acquire_pll_data">
-<code class="sig-prename descclassname">levitopy.exp_control.rp_tools.pll_follow_frequency.</code><code class="sig-name descname">acquire_pll_data</code><span class="sig-paren">(</span><em class="sig-param">rp</em>, <em class="sig-param">update_intervall=0.1</em>, <em class="sig-param">n_samples=20</em>, <em class="sig-param">pll_id=1</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.pll_follow_frequency.acquire_pll_data" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="function">
-<dt id="levitopy.exp_control.rp_tools.pll_follow_frequency.grid_search_pll_parameters">
-<code class="sig-prename descclassname">levitopy.exp_control.rp_tools.pll_follow_frequency.</code><code class="sig-name descname">grid_search_pll_parameters</code><span class="sig-paren">(</span><em class="sig-param">rp</em>, <em class="sig-param">parameters</em>, <em class="sig-param">update_intervall=0.01</em>, <em class="sig-param">n_samples=20</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.pll_follow_frequency.grid_search_pll_parameters" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="function">
-<dt id="levitopy.exp_control.rp_tools.pll_follow_frequency.pll_follow_frequency">
-<code class="sig-prename descclassname">levitopy.exp_control.rp_tools.pll_follow_frequency.</code><code class="sig-name descname">pll_follow_frequency</code><span class="sig-paren">(</span><em class="sig-param">hostname='local'</em>, <em class="sig-param">update_intervall=0.1</em>, <em class="sig-param">n_avrg=20</em>, <em class="sig-param">pll_id=1</em>, <em class="sig-param">max_phase_err=10</em>, <em class="sig-param">use_default_paramerters=False</em>, <em class="sig-param">print_current_values=True</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.pll_follow_frequency.pll_follow_frequency" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>hostname</strong> – </p></li>
-<li><p><strong>update_intervall</strong> – </p></li>
-<li><p><strong>pll_id</strong> – </p></li>
-<li><p><strong>use_default_paramerters</strong> – </p></li>
-</ul>
-</dd>
-</dl>
-<p>Returns:</p>
-</dd></dl>
-
+  <div class="section" id="levitopy-exp-control-rp-tools-package">
+<h1>levitopy.exp_control.rp_tools package<a class="headerlink" href="#levitopy-exp-control-rp-tools-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="levitopy-exp-control-rp-tools-pll-follow-frequency-module">
+<h2>levitopy.exp_control.rp_tools.pll_follow_frequency module<a class="headerlink" href="#levitopy-exp-control-rp-tools-pll-follow-frequency-module" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="module-levitopy.exp_control.rp_tools.red_pitaya">
-<span id="red-pitaya"></span><h2>red_pitaya<a class="headerlink" href="#module-levitopy.exp_control.rp_tools.red_pitaya" title="Permalink to this headline">¶</a></h2>
-<dl class="class">
+<span id="levitopy-exp-control-rp-tools-red-pitaya-module"></span><h2>levitopy.exp_control.rp_tools.red_pitaya module<a class="headerlink" href="#module-levitopy.exp_control.rp_tools.red_pitaya" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya">
-<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitaya</code><span class="sig-paren">(</span><em class="sig-param">hostname='local'</em>, <em class="sig-param">username='root'</em>, <em class="sig-param">password='root'</em>, <em class="sig-param">init_bitfile=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitaya</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hostname</span><span class="o">=</span><span class="default_value">'local'</span></em>, <em class="sig-param"><span class="n">username</span><span class="o">=</span><span class="default_value">'root'</span></em>, <em class="sig-param"><span class="n">password</span><span class="o">=</span><span class="default_value">'root'</span></em>, <em class="sig-param"><span class="n">init_bitfile</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Baseclass to interface with Red Pitaya</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.bitfile_name">
 <code class="sig-name descname">bitfile_name</code><em class="property"> = 'pll_project.bit'</em><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.bitfile_name" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.exec_command">
-<code class="sig-name descname">exec_command</code><span class="sig-paren">(</span><em class="sig-param">command</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.exec_command" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">exec_command</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">command</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.exec_command" title="Permalink to this definition">¶</a></dt>
 <dd><p>function to execute commands to read and write from FPGA register</p>
 <p>this is either a local call when run on the RP or via a ssh connection</p>
 <dl class="field-list simple">
@@ -226,9 +207,9 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.get_value">
-<code class="sig-name descname">get_value</code><span class="sig-paren">(</span><em class="sig-param">register_entry</em>, <em class="sig-param">return_bitstring=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.get_value" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">get_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">register_entry</span></em>, <em class="sig-param"><span class="n">return_bitstring</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.get_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>read the value from the RP and write to the register_entry</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -240,25 +221,25 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.load_bitfile">
-<code class="sig-name descname">load_bitfile</code><span class="sig-paren">(</span><em class="sig-param">bitfile=None</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.load_bitfile" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">load_bitfile</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bitfile</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.load_bitfile" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.print_register">
-<code class="sig-name descname">print_register</code><span class="sig-paren">(</span><em class="sig-param">register_entry=None</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.print_register" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">print_register</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">register_entry</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.print_register" title="Permalink to this definition">¶</a></dt>
 <dd><p>print the register address and binary string value to std out</p>
 </dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.register">
 <code class="sig-name descname">register</code><em class="property"> = None</em><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.register" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.set_value">
-<code class="sig-name descname">set_value</code><span class="sig-paren">(</span><em class="sig-param">register_entry</em>, <em class="sig-param">value</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.set_value" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">set_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">register_entry</span></em>, <em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.set_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>write the value from the register_entry to the register on the RP</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -273,42 +254,42 @@
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.unsigned_bitstring_to_int">
-<em class="property">static </em><code class="sig-name descname">unsigned_bitstring_to_int</code><span class="sig-paren">(</span><em class="sig-param">bitstring</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.unsigned_bitstring_to_int" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">unsigned_bitstring_to_int</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bitstring</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.unsigned_bitstring_to_int" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.unsigned_int_to_bitstring">
-<em class="property">static </em><code class="sig-name descname">unsigned_int_to_bitstring</code><span class="sig-paren">(</span><em class="sig-param">val</em>, <em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.unsigned_int_to_bitstring" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">unsigned_int_to_bitstring</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span></em>, <em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.unsigned_int_to_bitstring" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.update_register">
-<code class="sig-name descname">update_register</code><span class="sig-paren">(</span><em class="sig-param">register_entry=None</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.update_register" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">update_register</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">register_entry</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">verbose</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya.update_register" title="Permalink to this definition">¶</a></dt>
 <dd><p>read the values from the RP and write to register_entry</p>
 <p>:param register_entry - if non update the entire register</p>
 </dd></dl>
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl">
-<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaOptControl</code><span class="sig-paren">(</span><em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaOptControl</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya" title="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya"><code class="xref py py-class docutils literal notranslate"><span class="pre">levitopy.exp_control.rp_tools.red_pitaya.RedPitaya</span></code></a></p>
 <p>Class to interface with delay feedback implementation by Gerard Conangla
 <a class="reference external" href="https://github.com/gerardpc/Red-Pitaya-Levitodynamics-Feedback">https://github.com/gerardpc/Red-Pitaya-Levitodynamics-Feedback</a></p>
 <p>tested with
 opt_control_v1_20200512.bit (not sure! double check)
 opt_control_v2_20200514.bit</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl.bitfile_name">
 <code class="sig-name descname">bitfile_name</code><em class="property"> = 'opt_control_v1.bit'</em><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl.bitfile_name" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl.read_parameter_user">
-<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param">param</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl.read_parameter_user" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl.read_parameter_user" title="Permalink to this definition">¶</a></dt>
 <dd><p>read values from the dictionary and return the requested parameter
 note: this uses the buffered values in the dictionary and doesn’t check the actual values in the RP</p>
 <dl class="field-list simple">
@@ -321,9 +302,9 @@ note: this uses the buffered values in the dictionary and doesn’t check the ac
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl.set_parameter_user">
-<code class="sig-name descname">set_parameter_user</code><span class="sig-paren">(</span><em class="sig-param">param</em>, <em class="sig-param">val</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl.set_parameter_user" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">set_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">val</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl.set_parameter_user" title="Permalink to this definition">¶</a></dt>
 <dd><p>update the register on the RP with values given by the user</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -340,16 +321,16 @@ note: this uses the buffered values in the dictionary and doesn’t check the ac
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl2">
-<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaOptControl2</code><span class="sig-paren">(</span><em class="sig-param">n_pll=1</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl2" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaOptControl2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_pll</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl" title="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl"><code class="xref py py-class docutils literal notranslate"><span class="pre">levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl</span></code></a></p>
 <p>based on the original design by Gerard Conangla
 <a class="reference external" href="https://github.com/gerardpc/Red-Pitaya-Levitodynamics-Feedback">https://github.com/gerardpc/Red-Pitaya-Levitodynamics-Feedback</a>
 Modified by Jan Gieseler to include safety net</p>
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl2.read_parameter_user">
-<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param">param</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl2.read_parameter_user" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl2.read_parameter_user" title="Permalink to this definition">¶</a></dt>
 <dd><p>read values from the dictionary and return the requested parameter
 note: this uses the buffered values in the dictionary and doesn’t check the actual values in the RP</p>
 <dl class="field-list simple">
@@ -362,9 +343,9 @@ note: this uses the buffered values in the dictionary and doesn’t check the ac
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl2.set_parameter_user">
-<code class="sig-name descname">set_parameter_user</code><span class="sig-paren">(</span><em class="sig-param">param</em>, <em class="sig-param">val</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl2.set_parameter_user" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">set_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">val</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaOptControl2.set_parameter_user" title="Permalink to this definition">¶</a></dt>
 <dd><p>update the register on the RP with values given by the user</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -381,26 +362,26 @@ note: this uses the buffered values in the dictionary and doesn’t check the ac
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL">
-<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaPLL</code><span class="sig-paren">(</span><em class="sig-param">n_pll=1</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaPLL</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_pll</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya" title="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya"><code class="xref py py-class docutils literal notranslate"><span class="pre">levitopy.exp_control.rp_tools.red_pitaya.RedPitaya</span></code></a></p>
 <p>Class to interface with PLL implementation by Felix Tebbenjohanns
 <a class="reference external" href="https://git.ee.ethz.ch/tefelix/redpitayapll">https://git.ee.ethz.ch/tefelix/redpitayapll</a></p>
 <p>pll_project.bit</p>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.bitfile_name">
 <code class="sig-name descname">bitfile_name</code><em class="property"> = 'pll_project.bit'</em><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.bitfile_name" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.pll_addr">
 <code class="sig-name descname">pll_addr</code><em class="property"> = [1092616192, 1093664768]</em><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.pll_addr" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.read_parameter_user">
-<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param">param</em>, <em class="sig-param">n_pll=1</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.read_parameter_user" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">n_pll</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.read_parameter_user" title="Permalink to this definition">¶</a></dt>
 <dd><p>read values from the dictionary and return the requested parameter
 note: this uses the buffered values in the dictionary and doesn’t check the actual values in the RP</p>
 <dl class="field-list simple">
@@ -416,9 +397,9 @@ note: this uses the buffered values in the dictionary and doesn’t check the ac
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.set_parameter_user">
-<code class="sig-name descname">set_parameter_user</code><span class="sig-paren">(</span><em class="sig-param">param</em>, <em class="sig-param">val</em>, <em class="sig-param">n_pll=1</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.set_parameter_user" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">set_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">val</span></em>, <em class="sig-param"><span class="n">n_pll</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL.set_parameter_user" title="Permalink to this definition">¶</a></dt>
 <dd><p>update the register on the RP with values given by the user</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -436,9 +417,9 @@ note: this uses the buffered values in the dictionary and doesn’t check the ac
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL2">
-<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaPLL2</code><span class="sig-paren">(</span><em class="sig-param">n_pll=1</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL2" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaPLL2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_pll</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL" title="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL"><code class="xref py py-class docutils literal notranslate"><span class="pre">levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL</span></code></a></p>
 <p>Modified version by Jan Gieseler, based on the modification by  Gerard Conangla</p>
 <p>allows to read the actual frequency of the PLL</p>
@@ -462,14 +443,14 @@ note: this uses the buffered values in the dictionary and doesn’t check the ac
 </dl>
 </dd>
 </dl>
-<dl class="attribute">
+<dl class="py attribute">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL2.bitfile_name">
 <code class="sig-name descname">bitfile_name</code><em class="property"> = 'pll_JG_v3.bit'</em><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL2.bitfile_name" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL2.read_parameter_user">
-<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param">param</em>, <em class="sig-param">n_pll=1</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL2.read_parameter_user" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">n_pll</span><span class="o">=</span><span class="default_value">1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL2.read_parameter_user" title="Permalink to this definition">¶</a></dt>
 <dd><p>read values from the dictionary and return the requested parameter
 note: this uses the buffered values in the dictionary and doesn’t check the actual values in the RP</p>
 <dl class="field-list simple">
@@ -487,9 +468,9 @@ note: this uses the buffered values in the dictionary and doesn’t check the ac
 
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL3">
-<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaPLL3</code><span class="sig-paren">(</span><em class="sig-param">n_pll=1</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL3" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaPLL3</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_pll</span><span class="o">=</span><span class="default_value">1</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL3" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL" title="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL"><code class="xref py py-class docutils literal notranslate"><span class="pre">levitopy.exp_control.rp_tools.red_pitaya.RedPitayaPLL</span></code></a></p>
 <p>Further extension by Jan Gieseler</p>
 <p>allows to read fast sampled the input (for testing later change this to reading the quadratures)</p>
@@ -497,9 +478,9 @@ note: this uses the buffered values in the dictionary and doesn’t check the ac
 first need to figure out how to access the bram values</p>
 </dd></dl>
 
-<dl class="class">
+<dl class="py class">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter">
-<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaParameter</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">base_addr</em>, <em class="sig-param">local_addr</em>, <em class="sig-param">msb</em>, <em class="sig-param">lsb</em>, <em class="sig-param">family='global'</em>, <em class="sig-param">datatype='uint'</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaParameter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">base_addr</span></em>, <em class="sig-param"><span class="n">local_addr</span></em>, <em class="sig-param"><span class="n">msb</span></em>, <em class="sig-param"><span class="n">lsb</span></em>, <em class="sig-param"><span class="n">family</span><span class="o">=</span><span class="default_value">'global'</span></em>, <em class="sig-param"><span class="n">datatype</span><span class="o">=</span><span class="default_value">'uint'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Parameter class that holds a parameter on the FPGA
 contains the address for the register on the FPGA</p>
@@ -511,44 +492,44 @@ msb, lsb: two integers defining the location in the bitstring
 family: meta info to which parameter familty parameter belongs
 datatype: supported ‘int’, ‘uint’ or dictionary mapping from stings (key) to  bitstrings (value)</p>
 </div></blockquote>
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.hex_to_binary_string">
-<em class="property">static </em><code class="sig-name descname">hex_to_binary_string</code><span class="sig-paren">(</span><em class="sig-param">hex_str</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.hex_to_binary_string" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">hex_to_binary_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">hex_str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.hex_to_binary_string" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.read_value">
-<code class="sig-name descname">read_value</code><span class="sig-paren">(</span><em class="sig-param">return_bitstring=False</em>, <em class="sig-param">return_value=True</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.read_value" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">read_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">return_bitstring</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">return_value</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.read_value" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.signed_bitstring_to_int">
-<em class="property">static </em><code class="sig-name descname">signed_bitstring_to_int</code><span class="sig-paren">(</span><em class="sig-param">bitstring</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.signed_bitstring_to_int" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">signed_bitstring_to_int</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bitstring</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.signed_bitstring_to_int" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.signed_int_to_bitstring">
-<em class="property">static </em><code class="sig-name descname">signed_int_to_bitstring</code><span class="sig-paren">(</span><em class="sig-param">val</em>, <em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.signed_int_to_bitstring" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">signed_int_to_bitstring</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span></em>, <em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.signed_int_to_bitstring" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.text_to_float">
-<code class="sig-name descname">text_to_float</code><span class="sig-paren">(</span><em class="sig-param">val</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.text_to_float" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">text_to_float</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.text_to_float" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.unsigned_bitstring_to_int">
-<em class="property">static </em><code class="sig-name descname">unsigned_bitstring_to_int</code><span class="sig-paren">(</span><em class="sig-param">bitstring</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.unsigned_bitstring_to_int" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">unsigned_bitstring_to_int</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bitstring</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.unsigned_bitstring_to_int" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.unsigned_int_to_bitstring">
-<em class="property">static </em><code class="sig-name descname">unsigned_int_to_bitstring</code><span class="sig-paren">(</span><em class="sig-param">val</em>, <em class="sig-param">n</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.unsigned_int_to_bitstring" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><code class="sig-name descname">unsigned_int_to_bitstring</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val</span></em>, <em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.unsigned_int_to_bitstring" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.update_register_bitstring">
-<code class="sig-name descname">update_register_bitstring</code><span class="sig-paren">(</span><em class="sig-param">value</em>, <em class="sig-param">value_type='hex'</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.update_register_bitstring" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">update_register_bitstring</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">value_type</span><span class="o">=</span><span class="default_value">'hex'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.update_register_bitstring" title="Permalink to this definition">¶</a></dt>
 <dd><p>update the full 32 long binary bitstring from the register</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -563,9 +544,9 @@ datatype: supported ‘int’, ‘uint’ or dictionary mapping from stings (key
 </dl>
 </dd></dl>
 
-<dl class="method">
+<dl class="py method">
 <dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.update_value">
-<code class="sig-name descname">update_value</code><span class="sig-paren">(</span><em class="sig-param">value</em>, <em class="sig-param">value_type='int'</em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.update_value" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname">update_value</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">value</span></em>, <em class="sig-param"><span class="n">value_type</span><span class="o">=</span><span class="default_value">'int'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaParameter.update_value" title="Permalink to this definition">¶</a></dt>
 <dd><p>value is converted to a bitstring with length msb-lsb and stored at the right location in the
 register bitstring</p>
 <dl class="field-list simple">
@@ -583,6 +564,101 @@ register bitstring</p>
 
 </dd></dl>
 
+<dl class="py class">
+<dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut">
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaSimpleDCOut</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya" title="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya"><code class="xref py py-class docutils literal notranslate"><span class="pre">levitopy.exp_control.rp_tools.red_pitaya.RedPitaya</span></code></a></p>
+<p>Class to interface for simple DC out</p>
+<p>tested with
+dc_out_20200518.bit</p>
+<dl class="py attribute">
+<dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut.bitfile_name">
+<code class="sig-name descname">bitfile_name</code><em class="property"> = 'dc_out_20200518.bit'</em><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut.bitfile_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut.read_parameter_user">
+<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut.read_parameter_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>read values from the dictionary and return the requested parameter
+note: this uses the buffered values in the dictionary and doesn’t check the actual values in the RP</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut.set_parameter_user">
+<code class="sig-name descname">set_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">val</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut.set_parameter_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>update the register on the RP with values given by the user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param</strong> – </p></li>
+<li><p><strong>val</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut2">
+<em class="property">class </em><code class="sig-prename descclassname">levitopy.exp_control.rp_tools.red_pitaya.</code><code class="sig-name descname">RedPitayaSimpleDCOut2</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitaya" title="levitopy.exp_control.rp_tools.red_pitaya.RedPitaya"><code class="xref py py-class docutils literal notranslate"><span class="pre">levitopy.exp_control.rp_tools.red_pitaya.RedPitaya</span></code></a></p>
+<p>Class to interface for simple DC out</p>
+<p>tested with
+dc_out_20200518.bit</p>
+<dl class="py attribute">
+<dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut2.bitfile_name">
+<code class="sig-name descname">bitfile_name</code><em class="property"> = 'dc_out_20200518.bit'</em><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut2.bitfile_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut2.read_parameter_user">
+<code class="sig-name descname">read_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut2.read_parameter_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>read values from the dictionary and return the requested parameter
+note: this uses the buffered values in the dictionary and doesn’t check the actual values in the RP</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>param</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut2.set_parameter_user">
+<code class="sig-name descname">set_parameter_user</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">val</span></em><span class="sig-paren">)</span><a class="headerlink" href="#levitopy.exp_control.rp_tools.red_pitaya.RedPitayaSimpleDCOut2.set_parameter_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>update the register on the RP with values given by the user</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>param</strong> – </p></li>
+<li><p><strong>val</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-levitopy.exp_control.rp_tools">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-levitopy.exp_control.rp_tools" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -594,10 +670,10 @@ register bitstring</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="levitopy.simulation.html" class="btn btn-neutral float-right" title="simulation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="levitopy.simulation.html" class="btn btn-neutral float-right" title="levitopy.simulation package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="levitopy.exp_control.html" class="btn btn-neutral float-left" title="exp_control" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="levitopy.exp_control.html" class="btn btn-neutral float-left" title="levitopy.exp_control package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

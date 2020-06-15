@@ -1,7 +1,10 @@
-simulation
+levitopy.simulation package
 ===========================
 
-biquad\_module
+Submodules
+----------
+
+levitopy.simulation.biquad\_module module
 -----------------------------------------
 
 .. automodule:: levitopy.simulation.biquad_module
@@ -9,7 +12,7 @@ biquad\_module
    :undoc-members:
    :show-inheritance:
 
-duffing\_sim\_aux\_functions
+levitopy.simulation.duffing\_sim\_aux\_functions module
 -------------------------------------------------------
 
 .. automodule:: levitopy.simulation.duffing_sim_aux_functions
@@ -17,7 +20,7 @@ duffing\_sim\_aux\_functions
    :undoc-members:
    :show-inheritance:
 
-dynamical\_systems
+levitopy.simulation.dynamical\_systems module
 ---------------------------------------------
 
 .. automodule:: levitopy.simulation.dynamical_systems
@@ -25,7 +28,7 @@ dynamical\_systems
    :undoc-members:
    :show-inheritance:
 
-sde\_functions
+levitopy.simulation.sde\_functions module
 -----------------------------------------
 
 .. automodule:: levitopy.simulation.sde_functions
@@ -33,7 +36,7 @@ sde\_functions
    :undoc-members:
    :show-inheritance:
 
-sde\_solve
+levitopy.simulation.sde\_solve module
 -------------------------------------
 
 .. automodule:: levitopy.simulation.sde_solve
@@ -41,3 +44,11 @@ sde\_solve
    :undoc-members:
    :show-inheritance:
 
+
+Module contents
+---------------
+
+.. automodule:: levitopy.simulation
+   :members:
+   :undoc-members:
+   :show-inheritance:
